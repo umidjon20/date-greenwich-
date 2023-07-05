@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-width: 320px;
+    background: #fff;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 1.4285em;
+    color: rgba(0,0,0,.87)
+    }
+    *{
+        font-family: 'Roboto', sans-serif;
+    }
+    h3{
+     font-size: 17px;   
+    }
+    .pl{
+        padding-left: 1rem;
+        padding-top: 1px;
+    }
+    .fs{
+        font-size: 1rem;
+    }
+
+    .wrapper{
+        width: 740px;
+        height: auto;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        // background-color: aqua;
+        .promo{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            // background-color:tomato;
+
+             .left{
+                width: 48%;
+                background: #fff;
+                .value{
+                     input{
+                        width: 97%;
+                        height: 35px;
+                        font-size: 1rem;
+                        border: none; 
+                        border:1px solid skyblue;
+                        border-radius: 5px;
+                        outline: skyblue;
+                        
+                     }
+                }
+                p{
+                    font-size: 15px;
+                    color: rgb(161, 158, 155);
+                }
+                .modal-btn{
+                    width: 110px;
+                    height: 35px;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 5px;
+                    background: rgb(62, 62, 212);
+                    color:#fff;
+                    cursor: pointer;
+
+
+                }
+
+             }
+             .right{
+                width: 48%;
+                // background-color: salmon;
+                text-align: center;
+                .number{
+                    width: 98%;
+                    height: 50px;
+                    margin-top: 35px;
+                    padding-top: 20px;
+                    letter-spacing: 2px;
+                    font-size: 3.5rem;
+                    // border: 1px solid black;
+                }
+
+                .pm{
+                   font-size: 1rem;
+                }
+                button{
+                    width: 67px;
+                    height: 35px;
+                    border-radius:5px;
+                    margin-top: 20px;
+                    font-size: 16px;
+                    margin-left: -9rem;
+                    background-color: #fff;
+                    border:1px solid black;
+                    cursor: pointer;
+                
+                     
+                }
+
+             }
+        }
+        .modal{
+            display: none;
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid  rgb(169, 189, 208);
+            border-radius: 5px;
+            // background: rgb(226, 220, 220);
+            .left_content{
+                width: 30%;
+                background: #d1dbddc9;
+                border: 1px solid rgb(169, 189, 208);
+                h3{
+                    height: 28px;
+                    padding-left: 1rem;
+                    border-bottom: 1px solid rgb(169, 189, 208);
+                    
+                }
+            }
+            .right_content{
+                width: 70%;
+                .format{
+                    width: 100%;
+                    height: 45px;
+                    border-left: 1px solid  rgb(169, 189, 208);
+                    
+                }
+                .gmt{
+                    width: 100%;
+                    height: 44px;
+                    border: 1px solid  rgb(169, 189, 208);
+                    border-right: none;
+                   
+
+                }
+                .your-tmz{
+                    width: 100%;
+                    height: 45px;
+                    border: 1px solid  rgb(169, 189, 208);
+                    border-top: none;
+                    border-right: none; 
+                }
+            }
+        }
+        .input_value{
+            width: 100%;
+            display: flex;
+            // justify-content: space-between;
+            column-gap: 20px;
+            input{
+                width: 100px;
+                height: 40px;
+                border-radius:6px;
+                border:none;
+                border: 1px solid  rgb(195, 183, 162);
+                // outline-style:none;
+                outline: rgb(98, 166, 192);
+            }
+            b{
+                display: block;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+           
+        }
+        .btn-modal{
+            width: 110px;
+                    height: 35px;
+                    font-size: 16px;
+                    border: none;
+                    border-radius: 5px;
+                    background: rgb(62, 62, 212);
+                    color:#fff;
+                    cursor: pointer;
+        }
+        .modal-time{
+            display: none;
+            width: 100%;
+            overflow: hidden;
+            border: 1px solid  rgb(169, 189, 208);
+            border-radius: 5px;
+            // background: rgb(226, 220, 220);
+            margin-bottom: 50px;
+            .left_content{
+                width: 30%;
+                background: #d1dbddc9;
+                border: 1px solid rgb(169, 189, 208);
+                h4{
+                    height: 28px;
+                    padding-left: 1rem;
+                    border-bottom: 1px solid rgb(169, 189, 208);
+                    
+                }
+            }
+            .right_content{
+                width: 70%;
+                .unix{
+                    
+                    width: 100%;
+                    height: 48px;
+                    border-left: 1px solid  rgb(169, 189, 208);
+                    
+                }
+                .gmt2{
+                    width: 100%;
+                    height: 46px;
+                    border: 1px solid  rgb(169, 189, 208);
+                    border-right: none;
+                   
+
+                }
+                .your-tmz2{
+                    width: 100%;
+                    height: 47px;
+                    border: 1px solid  rgb(169, 189, 208);
+                    border-top: none;
+                    border-right: none; 
+                }
+            }
+        }
+    }

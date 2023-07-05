@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="promo">
+            <div class="left">
+                <h3>The Current Epoch Unix Timestamp</h3>
+                <h4>Enter a Timestamp</h4>
+                <div class="value">
+                    <input type="number" class="input-num" placeholder="1676552152">
+                </div>
+                <p>Supports Unix timestamps in seconds, milliseconds, microseconds and nanoseconds.</p>
+                <button class="modal-btn">Convert <span>&#10145;</span></button>
+            </div>
+            <div class="right">
+                <div class="number"></div>
+                <h3>SECONDS SINCE JAN 01 1970. (UTC)</h3>
+                <h2 class="pm"></h2>
+                <div> <button class="btn-copy">Copy</button></div>
+            </div>
+        </div>
+        <div class="modal">
+            <div class="left_content">
+               <h3>Format</h3>
+               <h3>GMT</h3>
+               <h3>Your Time Zone</h3>
+               <h3 style="border-bottom: none; height: 15px; ">Relative</h3>
+            </div>
+            <div class="right_content">
+                <div class="format fs pl"></div>
+
+                <div class="gmt fs pl"></div>
+                <div class="your-tmz fs pl"></div>
+                <div class="relative fs pl" style="height: 48px; border-left: 1px solid  rgb(195, 183, 162);"></div>
+            </div>
+        </div>
+        <h4 style="margin: 0;">Enter a Date & Time</h4>
+
+        <div class="input_value">
+            <div class="years">
+                <b>Year</b>
+               <input type="number" class="year" placeholder="YYYY" maxlength="4" value="2023" min="1">
+            </div>
+            <div class="months">
+                <b>Month </b>
+                <input type="number" class="month" placeholder="MM" maxlength="2" value="1" min="1" max="12">
+            </div>
+            <div class="days">
+                <b>Day</b>
+                <input type="number"  class="day"placeholder="DD" maxlength="2" value="1" min="1" max="31">
+            </div>
+            <div class="hours">
+                <b>Hour (24 hour)</b>
+                <input type="number" class="hour" placeholder="HH" maxlength="2" value="1" min="0" max="23">
+            </div>
+            <div class="minute">
+                <b>Minutes</b>
+                <input type="number" class="minutes" placeholder="MM" maxlength="2" value="1" min="0" max="59">
+            </div>
+            <div class="second">
+               <b> Seconds</b>
+                <input type="number" class="seconds" placeholder="SS" maxlength="2" value="1" min="0" max="59">
+            </div>
+        </div>
+            <button class="btn-modal">Convert <span>&#10145;</span></button>
+        
+        <div class="modal-time">
+            <div class="left_content">
+               <h4>Unix Timestamp</h4>
+               <h4>GMT</h4>
+               <h4>Your Time Zone</h4>
+               <h4 style="border-bottom: none; height: 15px; ">Relative</h4>
+            </div>
+            <div class="right_content">
+             <div class="unix fs pl"></div>
+             <div class="gmt2 fs pl"></div>
+             <div class="your-tmz2 fs pl"></div>
+             <div class="relative2 fs pl" style="height: 45px; border-left: 1px solid  rgb(195, 183, 162);"></div>
+            </div>
+        </div>
+    </div>
+   <script src="js/script.js"></script> 
+</body>
+</html>
