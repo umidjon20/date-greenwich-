@@ -121,7 +121,7 @@ let copy = document.querySelector('.btn-copy')
 copy.addEventListener('click',()=>{
     let date = new Date().getTime()
 
-    navigator.clipboard.writeText(date.toFixed(0))
+    navigator.clipboard.writeText(date)
     copy.innerText = 'Copied!'
     
 })
