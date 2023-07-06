@@ -119,7 +119,7 @@ function addzero(num){
 let copy = document.querySelector('.btn-copy')
 
 copy.addEventListener('click',()=>{
-    let date = new Date().getTime()/1000
+    let date = new Date().getTime()
 
     navigator.clipboard.writeText(date.toFixed(0))
     copy.innerText = 'Copied!'
